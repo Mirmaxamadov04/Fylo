@@ -1,0 +1,88 @@
+.hero .container {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__heading,
+.hero__paragraph {
+  padding-top: 35px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+}
+
+.hero__heading {
+  max-width: 730px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.hero__paragraph {
+  max-width: 600px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.hero__button {
+  margin-top: 32px;
+  padding: 18px 90px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: linear-gradient(138.1deg, #63e1d9 -49.34%, #34a0cd 100%);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 28px;
+  border: none;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  background: #8adae3;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__image {
+    width: 520px;
+    height: 334px;
+  }
+
+  .hero__heading {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .hero__paragraph {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero .container {
+    margin-top: 40px;
+  }
+
+  .hero__image {
+    width: 310px;
+    height: 225px;
+  }
+
+  .hero__heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .hero__paragraph {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

@@ -1,0 +1,121 @@
+.comment .container {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment__info {
+  position: relative;
+  padding: 40px 25px 0px;
+  margin-left: 10px;
+  max-width: 360px;
+  width: 100%;
+  background: #202a3c;
+  box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.0991282);
+  border-radius: 3.93258px;
+}
+
+.comment__info:first-child::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 79px;
+  height: 40px;
+  top: -35px;
+  left: 0;
+  z-index: -9;
+  background-image: url("../images/quote.svg");
+  background-repeat: no-repeat;
+}
+
+.comment__info__paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.person {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  margin-left: 30px;
+}
+
+.person::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  left: -30px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("../images/satish.svg");
+}
+
+.bruce:nth-child(even):before {
+  background-image: url("../images/bruce.svg");
+}
+
+.iva:nth-child(even):before {
+  background-image: url("../images/iva.svg");
+}
+
+.person__name {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.person__position {
+  padding-top: 4px;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 900px) {
+  .comment .container {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .comment__info {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .comment .container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .comment__info {
+    margin-left: 0px;
+    margin-top: 20px;
+    max-width: 700px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .comment__info__paragraph {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .person__name {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .person__position {
+    font-size: 7px;
+    line-height: 10px;
+  }
+}/*# sourceMappingURL=comment.css.map */
