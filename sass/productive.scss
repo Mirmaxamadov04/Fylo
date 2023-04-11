@@ -63,6 +63,7 @@
 
 @media only screen and (max-width: 1000px) {
   .productive .container {
+    margin-top: 80px;
     flex-direction: column;
     text-align: center;
   }
@@ -98,6 +99,7 @@
 
 @media only screen and (max-width: 550px) {
   .productive .container {
+    margin-top: 40px;
     flex-direction: column;
     text-align: center;
     justify-content: center;

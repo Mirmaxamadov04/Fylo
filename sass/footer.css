@@ -34,14 +34,17 @@
 
 .footer__info-div {
   display: flex;
+  margin-left: 10px;
 }
 
 .address_email {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
 }
 
 .address_email > a {
+  display: inline;
   position: relative;
   padding-bottom: 20px;
   text-decoration: none;
@@ -50,6 +53,7 @@
   line-height: 21px;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .address_email > a:before {
@@ -77,6 +81,7 @@
 
 .footer__list {
   list-style-type: none;
+  margin-left: 10px;
 }
 
 .footer__item {
@@ -92,6 +97,10 @@
   cursor: pointer;
 }
 
+.social {
+  margin-left: 10px;
+}
+
 .social__link {
   text-decoration: none;
   margin-left: 10px;
@@ -99,4 +108,48 @@
 
 .social__item:hover {
   background: #62e0d9;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 60px;
+    justify-content: space-between;
+  }
+  .social {
+    margin-top: 10px;
+  }
+  .footer__list {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+    justify-content: space-between;
+  }
+  .social {
+    margin-top: 10px;
+  }
+  .footer__list {
+    margin-top: 10px;
+  }
+  .address_email {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .address_email {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    -moz-text-align-last: left;
+         text-align-last: left;
+    margin-left: 40px;
+  }
 }/*# sourceMappingURL=footer.css.map */

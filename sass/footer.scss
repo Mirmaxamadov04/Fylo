@@ -53,6 +53,7 @@
   line-height: 21px;
   text-align: center;
   color: #ffffff;
+  cursor: pointer !important;
 }
 
 .address_email > a:before {
@@ -92,7 +93,8 @@
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  cursor: pointer;
+  transition: 0.3s all ease;
+  cursor: pointer !important;
 }
 
 .social {
@@ -106,6 +108,10 @@
 
 .social__item:hover {
   background: #62e0d9;
+}
+
+.social__img:hover {
+  border: 0.918357px solid #62e0d9;
 }
 
 @media only screen and (max-width: 900px) {
@@ -127,6 +133,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .footer .container {
+    padding: 150px 20px 50px;
+    z-index: -990;
+  }
+
   .footer__info {
     display: flex;
     flex-direction: column;
